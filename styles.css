@@ -31,7 +31,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 10%;
+    width: 150px;
     padding-left: 15px;
 }
 .nav-links {
@@ -188,14 +188,30 @@ nav{
 
 @media (max-width: 768px) {
     .nav-links {
+        position: fixed;
+        top: 80px; 
+        right: 1px;
         flex-direction: column;
+        /* background: rgba(0, 0, 0, 0.3);   */
+        padding: 1px;
+        border-radius: 10px;
+        z-index: 1000;
     }
 
-    .nav-link i{
-        margin-right: 0;
+    .nav-links a {
+        padding: 5px;
+        color: white;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
     }
     .nav-links-icons{
         display: none;
+    }
+    .pro{
+        min-width:150px;
     }
     .project-container {
         flex-direction: column;
